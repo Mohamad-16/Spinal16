@@ -76,9 +76,7 @@ export default function WelcomeScreen({ onNext }) {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
         >
-          <div className={`text-4xl flex justify-center items-start ${isDarkMode ? 'text-white/50' : 'text-gray-400'}`}>
-            <span style='font-size:50px;'>&#128070;</span>
-          </div>
+          
         </motion.div>
       </div>
     </div>
