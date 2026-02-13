@@ -77,7 +77,7 @@ export default function WelcomeScreen({ onNext }) {
           whileInView={{ opacity: 1 }}
         >
           <div className={`text-4xl flex justify-center items-start ${isDarkMode ? 'text-white/50' : 'text-gray-400'}`}>
-            <img className='-rotate-45 w-10 relative top-20 right-6' src="src\assets\cupid.png" alt="Click Here -->" />
+            <span style='font-size:50px;'>&#128070;</span>
           </div>
         </motion.div>
       </div>
