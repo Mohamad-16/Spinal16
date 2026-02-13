@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .glow {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  .glow-rose {
+    box-shadow: 0 0 30px rgba(244, 63, 94, 0.6);
+  }
+  
+  .glow-royal {
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.6);
+  }
+  
+  .glow-sunset {
+    box-shadow: 0 0 30px rgba(249, 115, 22, 0.6);
+  }
+  
+  .glow-ocean {
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.6);
+  }
+  
+  .glow-forest {
+    box-shadow: 0 0 30px rgba(34, 197, 94, 0.6);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #f43f5e, #fb7185);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #e11d48, #f43f5e);
+}
+
+/* Selection color */
+::selection {
+  background: rgba(244, 63, 94, 0.3);
+  color: inherit;
+}
