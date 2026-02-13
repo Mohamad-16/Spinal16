@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from '../utils/ThemeContext';
+import coupleImage from '../assets/5654aeda64a651c883435337d4509129.jpg';
 
 const loveQuotes = [
   "You are my today and all of my tomorrows",
@@ -141,8 +142,11 @@ export default function ProposalReveal() {
                   repeat: Infinity,
                 }}
               >
-                <div className="w-64 h-64 bg-gradient-to-br from-pink-200 to-rose-300 rounded-2xl flex items-center justify-center">
-                  <motion.div
+                <div className="w-[12rem] h-[20rem] rounded-2xl overflow-hidden">
+                  <motion.img
+                    src={coupleImage}
+                    alt="Us"
+                    className="w-full h-full object-cover rounded-2xl"
                     animate={{
                       scale: [1, 1.1, 1],
                     }}
@@ -150,11 +154,9 @@ export default function ProposalReveal() {
                       duration: 2,
                       repeat: Infinity,
                     }}
-                  >
-                    <span className="text-8xl">👩‍❤️‍👨</span>
-                  </motion.div>
+                  />
                 </div>
-                
+
                 {/* Heart pulse border */}
                 <motion.div
                   className={`absolute inset-0 rounded-3xl border-4 ${theme.glow}`}
@@ -260,7 +262,7 @@ export default function ProposalReveal() {
               >
                 Will You Be
               </motion.h1>
-              
+
               <motion.h2
                 className={`font-romantic text-4xl md:text-6xl mb-8 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}
                 animate={{
